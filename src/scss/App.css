@@ -1,0 +1,177 @@
+/******************
+******COLORS******
+******************/
+/********************************************** 
+*********************Mixins********************
+**********************************************/
+/**************************************
+*****************FONTS*****************
+**************************************/
+/********************************************* 
+****************fonts & colors**************** 
+*********************************************/
+body {
+  font-family: "Alegreya", sans-serif;
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white; }
+
+h1 {
+  font-family: "Nunito", serif;
+  color: #323334; }
+
+a {
+  font-family: "Nunito", serif;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  cursor: pointer; }
+  a:hover {
+    color: white;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out; }
+
+/*********************************************** 
+***************Bootstrap overrides************** 
+************************************************/
+.container-fluid {
+  line-height: 24px; }
+
+/**********************
+*********header********
+**********************/
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #323334;
+  color: black;
+  height: 94px; }
+  header .logo {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translate-y(-50%);
+    -moz-transform: translate-y(-50%);
+    transform: translate-y(-50%); }
+  header nav,
+  header nav ul,
+  header nav ul li {
+    margin: 0;
+    padding: 0; }
+  header nav {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translate-y(-50%);
+    -moz-transform: translate-y(-50%);
+    transform: translate-y(-50%); }
+    header nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 20px; }
+      header nav ul li.last {
+        margin: 0; }
+      header nav ul li a {
+        font-size: 19px;
+        line-height: normal;
+        color: #AAA8A5; }
+
+/**********************
+*******Container*******
+**********************/
+.container {
+  background-image: url("../assets/images/me_3.jpg");
+  height: 100%; }
+
+.route-body {
+  margin-top: 2.5%; }
+  .route-body h1 {
+    text-align: center; }
+  .route-body p {
+    margin-top: 25px; }
+
+.logo-1 {
+  background-image: url("../assets/images/logo_1.png");
+  background-repeat: no-repeat;
+  margin-top: 95px;
+  margin-left: 20px;
+  width: 150px;
+  height: 150px; }
+
+.logo-2 {
+  background-image: url("../assets/images/logo_2.png");
+  background-repeat: no-repeat;
+  margin-top: 95px;
+  margin-left: 25px;
+  width: 200px;
+  height: 200px; }
+
+.logo-3 {
+  background-image: url("../assets/images/logo_3.png");
+  background-repeat: no-repeat;
+  margin-top: 95px;
+  margin-left: 50px;
+  width: 300px;
+  height: 300px; }
+
+.logo-4 {
+  background-image: url("../assets/images/logo_4.png");
+  background-repeat: no-repeat;
+  margin-top: 95px;
+  margin-left: 50px;
+  width: 500px;
+  height: 500px; }
+
+.logo-5 {
+  background-image: url("../assets/images/logo_5.png");
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-left: 20px;
+  width: 90px;
+  height: 90px; }
+
+/**********************
+*********footer********
+**********************/
+footer {
+  position: fixed;
+  display: block;
+  width: 100%;
+  background: #323334;
+  color: black;
+  height: 120px;
+  bottom: 0; }
+  footer .logo {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translate-y(-50%);
+    -moz-transform: translate-y(-50%);
+    transform: translate-y(-50%); }
+  footer nav,
+  footer nav ul,
+  footer nav ul li {
+    margin: 0;
+    padding: 0; }
+  footer nav {
+    position: absolute;
+    top: 38%;
+    right: 40%;
+    -webkit-transform: translate-y(-50%);
+    -moz-transform: translate-y(-50%);
+    transform: translate-y(-50%); }
+    footer nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 20px; }
+      footer nav ul li.last {
+        margin: 0; }
+      footer nav ul li a {
+        font-size: 19px;
+        line-height: normal;
+        color: #AAA8A5; }

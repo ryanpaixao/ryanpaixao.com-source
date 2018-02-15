@@ -1,0 +1,183 @@
+@import "_config.scss";
+
+/**********************
+*********header********
+**********************/
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: $headerColor;
+  color: $pColor;
+  height: 94px;
+
+  .logo {
+    position: absolute;
+    top: 50%; 
+    left: 15px;
+    @include translate-y(-50%);
+  }
+
+  nav, 
+  nav ul, 
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    position: absolute;
+    top: 50%; 
+    right: 15px;
+    @include translate-y(-50%);
+
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 20px;
+
+      &.last {
+        margin: 0;
+      }
+
+      a {
+        font-size: 19px;
+        line-height: normal;
+        color: $anchorColor;
+      }
+    }
+  }
+}
+
+/**********************
+*******Container*******
+**********************/
+
+// container
+.container {
+  background-image: url('../assets/images/me_3.jpg');
+  height: 100%;
+}
+
+// routeBody
+.route-body {
+  margin-top: 2.5%;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    margin-top: 25px;
+  }
+}
+
+// Container background images
+// .left-bg-image {
+//   // height: 600px;
+//   background-image: url("../assets/images/me_1.jpg");
+//   background-repeat: no-repeat;
+// }
+
+// .right-bg-image {
+//   // height: 600px;
+//   // width: 400px;
+//   background-image: url("../assets/images/me_2.jpg");
+//   background-repeat: no-repeat;
+// }
+
+.logo-1 {
+  background-image: url("../assets/images/logo_1.png");
+  background-repeat: no-repeat;
+  margin-top: 95px;
+  margin-left: 20px; 
+  width: 150px; 
+  height: 150px;
+}
+
+.logo-2 {
+  background-image: url("../assets/images/logo_2.png");
+  background-repeat: no-repeat;
+  margin-top: 95px;
+  margin-left: 25px; 
+  width: 200px; 
+  height: 200px;
+}
+
+.logo-3 {
+  background-image: url("../assets/images/logo_3.png");
+  background-repeat: no-repeat;
+  margin-top: 95px;
+  margin-left: 50px; 
+  width: 300px; 
+  height: 300px;
+}
+
+.logo-4 {
+  background-image: url("../assets/images/logo_4.png");
+  background-repeat: no-repeat;
+  margin-top: 95px;
+  margin-left: 50px; 
+  width: 500px; 
+  height: 500px;
+}
+
+.logo-5 {
+  background-image: url("../assets/images/logo_5.png");
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-left: 20px; 
+  width: 90px; 
+  height: 90px;
+}
+
+
+/**********************
+*********footer********
+**********************/
+footer {
+  position: fixed;
+  display: block;
+  width: 100%;
+  background: $headerColor;
+  color: $pColor;
+  height: 120px;
+  bottom: 0;
+
+  .logo {
+    position: absolute;
+    top: 50%; 
+    left: 15px;
+    @include translate-y(-50%);
+  }
+
+  nav, 
+  nav ul, 
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    position: absolute;
+    top: 38%; 
+    right: 40%;
+    @include translate-y(-50%);
+
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 20px;
+
+      &.last {
+        margin: 0;
+      }
+
+      a {
+        font-size: 19px;
+        line-height: normal;
+        color: $anchorColor;
+      }
+    }
+  }
+}
