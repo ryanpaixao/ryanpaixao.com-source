@@ -21,36 +21,34 @@ import Contact from './components/pages/contact.jsx';
 const App = () => {
   return (
     <Router>
-      <div className="App">
-        <div className="container col-md-12">
-        
-          <div className="row">
-            <Header />
-          </div>
-          
-          <div className="col-md-12">
-            <div className="row">
-              <div className="col-md-4 left-bg-image" />
-
-              <div className="col-md-4 route-body">
-                <div className="row">
-                  <Route exact path='/' component={Homepage} />
-                  <Route exact path='/Skills' component={Skills} />
-                  <Route exact path='/Experience' component={Experience} />
-                  <Route exact path='/About' component={About} />
-                  <Route exact path='/Contact' component={Contact} />
-                </div>
-              </div>
-
-              <div className="right-bg-image col-md-4" />
-            </div>
-          </div>
-
-          <div className="row">
-            <Footer />
-          </div>
-          
+      <div className="container col-sm-12 ">
+      
+        <div className="row">
+          <Header />
         </div>
+        
+        <div className="col-xs-12">
+          <div className="row">
+            <div className="col-md-4 col-xs-0 left-bg-image" />
+
+            <div className="col-md-4 col-xs-12 route-body">
+              <div className="row">
+                <Route exact path='/' component={Homepage} />
+                <Route exact path='/Skills' component={Skills} />
+                <Route exact path='/Experience' component={Experience} />
+                <Route exact path='/About' component={About} />
+                <Route exact path='/Contact' component={Contact} />
+              </div>
+            </div>
+
+            <div className="col-md-4 col-xs-0 right-bg-image" />
+          </div>
+        </div>
+
+        <div className="row">
+          <Footer />
+        </div>
+        
       </div>
     </Router>
   );
