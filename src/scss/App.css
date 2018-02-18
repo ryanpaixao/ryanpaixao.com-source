@@ -16,15 +16,19 @@ html {
 body {
   font-family: "Alegreya", sans-serif;
   font-size: 20px;
-  color: black;
+  color: #f8f9fa;
   font-weight: 400;
   font-style: normal;
-  background-color: white;
+  background-color: #f8f9fa;
   height: 100%; }
 
 h1 {
   font-family: "Nunito", serif;
-  color: #323334; }
+  color: #f8f9fa; }
+
+h2 {
+  font-family: "Nunito", serif;
+  color: #f8f9fa; }
 
 a {
   font-family: "Nunito", serif;
@@ -32,9 +36,10 @@ a {
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #ea7e3a; }
   a:hover {
-    color: white;
+    color: #f8f9fa;
     -webkit-transition: 0.4s ease-in-out;
     -moz-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out; }
@@ -45,16 +50,20 @@ a {
 .container-fluid {
   line-height: 24px; }
 
+/********************
+** Declare variables
+********************/
 /**********************
 *********header********
 **********************/
 header {
-  position: relative;
+  position: fixed;
   display: block;
   width: 100%;
   background: #323334;
-  color: black;
-  height: 94px; }
+  color: #f8f9fa;
+  height: 94px;
+  z-index: 1; }
   header .logo {
     position: absolute;
     top: 50%;
@@ -92,21 +101,28 @@ header {
 *******Container*******
 **********************/
 .container {
-  background-image: url("../assets/images/me_3.jpg");
+  background-image: url("../assets/images/me_smokey.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin-bottom: 70px;
   height: 100%; }
+
+.container-body {
+  margin-top: 94px; }
 
 .route-body {
   margin-top: 2.5%;
   height: 100%; }
   .route-body h1 {
     text-align: center; }
+  .route-body h2 {
+    text-align: center;
+    margin-top: 25px; }
   .route-body p {
     margin-top: 25px; }
 
@@ -161,16 +177,9 @@ footer {
   display: block;
   width: 100%;
   background: #323334;
-  color: black;
-  height: 120px;
+  color: #f8f9fa;
+  height: 70px;
   bottom: 0; }
-  footer .logo {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    -webkit-transform: translate-y(-50%);
-    -moz-transform: translate-y(-50%);
-    transform: translate-y(-50%); }
   footer nav,
   footer nav ul,
   footer nav ul li {
@@ -178,8 +187,8 @@ footer {
     padding: 0; }
   footer nav {
     position: absolute;
-    top: 38%;
-    right: 40%;
+    top: 18%;
+    right: 41.5%;
     -webkit-transform: translate-y(-50%);
     -moz-transform: translate-y(-50%);
     transform: translate-y(-50%); }

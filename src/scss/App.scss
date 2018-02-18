@@ -1,15 +1,23 @@
 @import "_config.scss";
 
+/********************
+** Declare variables
+********************/
+// heights
+$headerHeight: 94px;
+$footerHeight: 70px;
+
 /**********************
 *********header********
 **********************/
 header {
-  position: relative;
+  position: fixed;
   display: block;
   width: 100%;
   background: $headerColor;
   color: $pColor;
-  height: 94px;
+  height: $headerHeight;
+  z-index: 1;
 
   .logo {
     position: absolute;
@@ -59,15 +67,21 @@ header {
 **********************/
 // container
 .container {
-  background-image: url('../assets/images/me_3.jpg');
+  background-image: url('../assets/images/me_smokey.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin-bottom: $footerHeight;
   height: 100%;
+}
+
+// container-body
+.container-body {
+  margin-top: $headerHeight;
 }
 
 // routeBody
@@ -79,24 +93,15 @@ header {
     text-align: center;
   }
 
+  h2 {
+    text-align: center;
+    margin-top: 25px;
+  }
+
   p {
     margin-top: 25px;
   }
 }
-
-// Container background images
-// .left-bg-image {
-//   // height: 600px;
-//   background-image: url("../assets/images/me_1.jpg");
-//   background-repeat: no-repeat;
-// }
-
-// .right-bg-image {
-//   // height: 600px;
-//   // width: 400px;
-//   background-image: url("../assets/images/me_2.jpg");
-//   background-repeat: no-repeat;
-// }
 
 .logo-1 {
   background-image: url("../assets/images/logo_1.png");
@@ -157,15 +162,8 @@ footer {
   width: 100%;
   background: $headerColor;
   color: $pColor;
-  height: 120px;
+  height: $footerHeight;
   bottom: 0;
-
-  .logo {
-    position: absolute;
-    top: 50%; 
-    left: 15px;
-    @include translate-y(-50%);
-  }
 
   nav, 
   nav ul, 
@@ -176,8 +174,8 @@ footer {
 
   nav {
     position: absolute;
-    top: 38%; 
-    right: 40%;
+    top: 18%; 
+    right: 41.5%;
     @include translate-y(-50%);
 
     ul li {
