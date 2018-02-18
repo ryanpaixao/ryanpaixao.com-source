@@ -1,0 +1,56 @@
+/******************
+******COLORS******
+******************/
+/********************************************** 
+*********************Mixins********************
+**********************************************/
+/**************************************
+*****************FONTS*****************
+**************************************/
+/********************************************* 
+****************fonts & colors**************** 
+*********************************************/
+html {
+  height: 100%; }
+
+body {
+  font-family: "Alegreya", sans-serif;
+  font-size: 20px;
+  color: #f8f9fa;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f8f9fa;
+  height: 100%; }
+
+h1 {
+  font-family: "Nunito", serif;
+  color: #f8f9fa; }
+
+h2 {
+  font-family: "Nunito", serif;
+  color: #f8f9fa; }
+
+a {
+  font-family: "Nunito", serif;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  color: #ea7e3a; }
+  a:hover {
+    color: #f8f9fa;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out; }
+
+/*********************************************** 
+***************Bootstrap overrides************** 
+************************************************/
+.container-fluid {
+  line-height: 24px; }
+
+.skills-page ul {
+  list-style: none; }
+  .skills-page ul li {
+    padding-bottom: 15px; }

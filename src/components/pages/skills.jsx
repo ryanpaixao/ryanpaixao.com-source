@@ -1,19 +1,84 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Skills = () => {
-  return (
-    <div className="container-fluid">
-      <h1>Skills</h1>
-      <p>
-        Software API Development Lifecycle
-        Every software company or startup has a unique software development lifecycle that they are using. It is often necessary to synchronize and align RESTful API deployment with the same processes that you use today for developing, testing, and deploying other applications.
+const skillsObj = {
+  "Frontend Languages": ["Javascript", "HTML5", "CSS3"],
+  "Backend Languages": ["Python 2.x", "Python 3.x"],
+  "Frameworks/Libraries": ["React.js", "Jquery", "Bootstrap"],
+  "Package Managers/Build Tools": ["NPM", "Bower", "Brunch", "Webpack"],
+  "Task & Project Management": ["Jira", "Git", "Github", "Dropbox", "Slack"],
+  "Virtualization": ["Vagrant, VirtualBox"],
+  "Operating Systems": ["Linux", "Windows"],
+  "Testing Suites/Libraries": ["Mocha", "Enzyme", "JSDOM", "Chai"],
+  "Testing Styles": ["Test-Driven Development", "Behavior-Driven Development", "Unit Testing"]
+}
 
-        Some services provide tools and sometimes even RESTful APIs that enable you to integrate their tools into your own development lifecycle. A common usage of the RESTful API is to write scripts or code that programmatically deploy REST API web services, or that migrate REST API services from one environment to another, as part of a larger automated process that also deploys or migrates other applications.
+class IndividualSkillItem extends Component {
+  render() {
+    return (
+      <li>
+        {this.props.skill}
+      </li>
+    )
+  }
+}
 
-        For example, RestCase is an online cloud software that makes no assumptions about your software development lifecycle or process (or anyone else&apos;s, for that matter). Rather, it exposes atomic functions that can be coordinated by your development team to automate and optimize your REST API development lifecycle.
-      </p>
-    </div>
-  );
+class IndividualSkill extends Component {
+  constructor(props) {
+    super(props);
+
+    this.displaySkills = this.displaySkills.bind(this);
+  }
+
+  displaySkills() {
+    return (
+      this.props.skillValues.map(function(skill, index) {
+        let key = "individual_skill_" + index.toString(); 
+
+        return <IndividualSkillItem skill={skill} key={key} />;
+      })
+    );
+  }
+
+  render() {
+    console.log('this.props', this.props);
+    return (
+      <li>
+        {this.props.skill}
+        <ul>
+          {this.displaySkills()}
+        </ul>
+      </li>
+    )
+  }
+}
+
+class Skills extends Component {
+  constructor(props) {
+    super(props);
+
+    this.displaySkills = this.displaySkills.bind(this);
+  }
+
+  displaySkills() {
+    return (
+      Object.keys(skillsObj).map(function(skill, index) {
+        let key = "skill_" + index.toString(); 
+
+        return <IndividualSkill skill={skill} skillValues={skillsObj[skill]} key={key} />;
+      })
+    );
+  }
+
+  render() {
+    return (
+      <div className="container-fluid skills-page">
+        <h1>Skills</h1>
+        <ul>
+          {this.displaySkills()}
+        </ul>        
+      </div>
+    );
+  }
 }
 
 export default Skills;
