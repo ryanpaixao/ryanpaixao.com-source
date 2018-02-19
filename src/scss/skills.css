@@ -19,7 +19,7 @@ body {
   color: #f8f9fa;
   font-weight: 400;
   font-style: normal;
-  background-color: #f8f9fa;
+  background-color: #323334;
   height: 100%; }
 
 h1 {
@@ -49,8 +49,3 @@ a {
 ************************************************/
 .container-fluid {
   line-height: 24px; }
-
-.skills-page ul {
-  list-style: none; }
-  .skills-page ul li {
-    padding-bottom: 15px; }
