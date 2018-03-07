@@ -11,7 +11,7 @@ import Footer from '../footerComponent/footer';
 // different page components
 import Homepage from './homePage';
 import Skills from './skills';
-import Experience from './experience';
+import Blog from './blog';
 import About from './about';
 import Contact from './contact';
 
@@ -33,7 +33,7 @@ const Container = () => {
                 <div className="row">
                   <Route exact path='/' component={Homepage} />
                   <Route exact path='/Skills' component={Skills} />
-                  <Route exact path='/Experience' component={Experience} />
+                  <Route exact path='/Blog' component={Blog} />
                   <Route exact path='/About' component={About} />
                   <Route exact path='/Contact' component={Contact} />
                 </div>

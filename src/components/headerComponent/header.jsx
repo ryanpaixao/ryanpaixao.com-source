@@ -6,7 +6,7 @@ import {
 const Header = () => {
   return (
     <header>
-      <div className="logo-5" />
+      <div className="logo-6" />
 
       <nav>
         <ul>

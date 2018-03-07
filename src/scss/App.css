@@ -37,7 +37,7 @@ a {
   -moz-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   cursor: pointer;
-  color: #ea7e3a; }
+  color: #4006e2; }
   a:hover {
     color: #f8f9fa;
     -webkit-transition: 0.4s ease-in-out;
@@ -89,7 +89,7 @@ a {
   -moz-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   cursor: pointer;
-  color: #ea7e3a; }
+  color: #4006e2; }
   a:hover {
     color: #f8f9fa;
     -webkit-transition: 0.4s ease-in-out;
@@ -220,6 +220,18 @@ header {
   height: 90px; }
   @media (max-width: 575px) {
     .logo-5 {
+      background-image: none; } }
+
+.logo-6 {
+  background-image: url("../assets/images/logos/5.png");
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-left: 20px;
+  width: 90px;
+  height: 90px;
+  background-size: cover; }
+  @media (max-width: 575px) {
+    .logo-6 {
       background-image: none; } }
 
 /**********************
