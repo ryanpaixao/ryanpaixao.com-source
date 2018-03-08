@@ -3,9 +3,11 @@ import {
   Link
 } from 'react-router-dom';
 
-const Header = () => {
+const Header = (props) => {
+  let urlIsRoot = props.match.isExact ? {display: 'none'} : {};
+
   return (
-    <header>
+    <header style={urlIsRoot}>
       <div style={{marginLeft: '20px', width: '90px'}}>
         <Link to="/">
           <div className="logo-6" />

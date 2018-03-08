@@ -19,7 +19,7 @@ body {
   color: #f8f9fa;
   font-weight: 400;
   font-style: normal;
-  background-color: #323334;
+  background-color: #869ca9;
   height: 100%; }
 
 h1 {
@@ -71,7 +71,7 @@ body {
   color: #f8f9fa;
   font-weight: 400;
   font-style: normal;
-  background-color: #323334;
+  background-color: #869ca9;
   height: 100%; }
 
 h1 {
@@ -161,7 +161,6 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-bottom: 70px;
   height: 100%; }
 
 .route-body {

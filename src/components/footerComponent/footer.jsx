@@ -5,9 +5,11 @@ const linkedinLogo = require('../../assets/images/linkedin_logos/White/Logo-Whit
 const githubLogo = require('../../assets/images/github_logos/PNG/GitHub-Mark-Light-32px.png');
 const twitterLogo = require('../../assets/images/twitter_logos/Twitter_Logo_WhiteOnImage/Twitter_Logo_WhiteOnImage.png');
 
-const Footer = () => {
+const Footer = (props) => {
+  let urlIsRoot = props.match.isExact ? {display: 'none'} : {};
+
   return (
-    <footer>
+    <footer style={urlIsRoot}>
       <nav>
         <ul>
           <li>

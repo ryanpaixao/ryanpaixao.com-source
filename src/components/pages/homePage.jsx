@@ -9,6 +9,8 @@ const sharedDefaults = {
   fontSize: '50px'
 };
 
+const endColor = '#f0f5f5'; // '#d1e0e0'; // '#000033'; // '#000066', // #4006e2',
+
 const ryanParams = [
   {
     jsxName: 'marginLeft',
@@ -30,7 +32,7 @@ const ryanParams = [
     jsxName: 'color',
     cssName: 'color',
     valueStart: 'white', // #4006e2',
-    valueEnd: '#4006e2',
+    valueEnd: endColor,
     duration: 1000,
     ease: 'ease-in-out'
   }
@@ -57,7 +59,7 @@ const paixaoParams = [
     jsxName: 'color',
     cssName: 'color',
     valueStart: 'white',
-    valueEnd: '#4006e2',
+    valueEnd: endColor,
     duration: 1000,
     ease: 'ease-in-out'
   }
@@ -76,13 +78,13 @@ const bodyTextParams = [
 
 class Homepage extends Component {
   render() {
-    const bodyText = <p>
-      Hello world! I'm a Frontend Web Developer from South Florida.
+    const bodyText = <p style={{color: '#f0f5f5'}}>
+      Hello world! I'm a Frontend Web Developer from South Florida. Find out more <a href='/About'>about</a> me.
     </p>;
 
     return (
-      <div className='offset-md-4 col-md-4 offset-sm-3 col-sm-6 col-xs-12 route-body'>
-        <div style={{display: 'flex'}}>
+      <div className='offset-md-4 col-md-4 offset-sm-3 col-sm-6 col-xs-12'>
+        <div style={{display: 'flex', marginTop: '260px'}}>
           <TransitionBoiler 
             styleParameters={ryanParams} 
             text={'Ryan'} 
