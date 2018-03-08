@@ -6,7 +6,11 @@ import {
 const Header = () => {
   return (
     <header>
-      <div className="logo-6" />
+      <div style={{marginLeft: '20px', width: '90px'}}>
+        <Link to="/">
+          <div className="logo-6" />
+        </Link>
+      </div>
 
       <nav>
         <ul>
