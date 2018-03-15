@@ -143,6 +143,8 @@ $paragraphFont: 'sans-serif';
   $paragraphFont: 'Didact Gothic', sans-serif;
 }
 
+$h1fontSize: 40px;
+
 /********************************************* 
 ****************fonts & colors**************** 
 *********************************************/
@@ -152,17 +154,23 @@ html {
 
 body {
   font-family: $paragraphFont;
-  font-size: 20px;
-  color: $pColor;
-  font-weight: 400;
   font-style: normal;
+  font-size: 22px;
+  line-height: 137%;
+  font-weight: 400;
+  color: $pColor;
   background-color: $bgColor;
+  // overflow: auto;
   height: 100%;
 }
 
 h1 {
   font-family: $headerFont;
-  color: $h1Color
+  font-size: $h1fontSize;
+  color: $h1Color;
+  width: 100%;
+  margin: 25px auto;
+  text-align: center;
 }
 
 h2{
@@ -181,11 +189,4 @@ a {
     color: $activeColor;
     @include transition(.4s ease-in-out);
   }
-}
-
-/*********************************************** 
-***************Bootstrap overrides************** 
-************************************************/
-.container-fluid {
-  line-height: 24px;
 }

@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="offset-md-4 col-md-4 offset-sm-3 col-sm-6 col-xs-12 route-body">
-      <h1>About</h1>
+    <div className='content'>
+      <h1 className='header-title'>About</h1>
       <p>
         I'm a web developer who loves what I do. I get great enjoyment from creating something new. Starting with an empty directory, an empty file, a blank page, and to end up with a harmonious collaboration. It’s a great feeling. To have an idea, a concept, evolve and become something tangible, it is a powerful thing.
       </p>

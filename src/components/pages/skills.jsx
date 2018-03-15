@@ -40,7 +40,6 @@ class IndividualSkill extends Component {
   }
 
   render() {
-    console.log('this.props', this.props);
     return (
       <div style={{padding: "15px"}}>
         <dt>{this.props.skill}</dt>
@@ -69,10 +68,10 @@ class Skills extends Component {
 
   render() {
     return (
-      <div className="offset-md-0 col-md-12 offset-sm-3 col-sm-6 col-xs-12 route-body skills-page">
-        <div style={{marginLeft: "20px"}}>
-          <h1>Skills</h1>
-          <div style={{display: "inline-flex"}}>
+      <div className='content'>
+        <div style={{marginLeft: '20px'}}>
+          <h1 className='header-title'>Skills</h1>
+          <div style={{display: 'inline-flex'}}>
             {this.displaySkills()}
           </div>        
         </div>

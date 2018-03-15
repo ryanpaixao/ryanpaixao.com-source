@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 // import styling
+import 'reset-css/reset.css';
 import './scss/App.css';
 
 // import page framework components
@@ -24,24 +25,22 @@ import NotFound from './components/pages/notFound.jsx';
 const App = () => {
   return (
     <Router>
-      <div className="container col-sm-12 ">
-        <div className="row">
+      <div className="app wrapper">
 
-          <Route path='/' component={Header} />
+        <Route path='/' component={Header} />
 
-          <Switch>
-            <Route exact path='/' component={Homepage} />
-            <Route exact path='/Skills' component={Skills} />
-            <Route exact path='/Blog' component={Blog} />
-            <Route exact path='/About' component={About} />
-            <Route exact path='/Contact' component={Contact} />
-            <Route path='/404' component={NotFound} />
-            <Redirect to='/404' />
-          </Switch>
+        <Switch>
+          <Route exact path='/' component={Homepage} />
+          <Route exact path='/Skills' component={Skills} />
+          <Route exact path='/Blog' component={Blog} />
+          <Route exact path='/About' component={About} />
+          <Route exact path='/Contact' component={Contact} />
+          <Route path='/404' component={NotFound} />
+          <Redirect to='/404' />
+        </Switch>
 
-          <Route path='/' component={Footer} />
+        <Route path='/' component={Footer} />
               
-        </div>
       </div>
     </Router>
   );

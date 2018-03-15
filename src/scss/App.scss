@@ -1,62 +1,6 @@
 @import "_config.scss";
-@import "skills.scss";
-
-/********************
-** Declare variables
-********************/
-// heights
-$headerHeight: 94px;
-$footerHeight: 70px;
-
-/**********************
-*********header********
-**********************/
-header {
-  position: fixed;
-  display: block;
-  width: 100%;
-  background: $headerColor;
-  color: $pColor;
-  height: $headerHeight;
-  z-index: 1;
-
-  .logo {
-    position: absolute;
-    top: 50%; 
-    left: 15px;
-    @include translate-y(-50%);
-  }
-
-  nav, 
-  nav ul, 
-  nav ul li {
-    margin: 0;
-    padding: 0;
-  }
-
-  nav {
-    position: absolute;
-    top: 50%; 
-    right: 15px;
-    @include translate-y(-50%);
-
-    ul li {
-      list-style-type: none;
-      display: inline-block;
-      margin-right: 20px;
-
-      &.last {
-        margin: 0;
-      }
-
-      a {
-        font-size: 19px;
-        line-height: normal;
-        color: $anchorColor;
-      }
-    }
-  }
-}
+@import "css_grid.scss";
+@import "menu.scss";
 
 // root
 #root {
@@ -67,7 +11,7 @@ header {
 *******Container*******
 **********************/
 // container
-.container {
+.app {
   background-image: url('../assets/images/me_smokey.jpg');
   background-repeat: no-repeat;
   background-position: right center;
@@ -76,85 +20,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  // margin-bottom: $footerHeight;
-  height: 100%;
-}
-
-// container-body
-.container-body {
-
-}
-
-// routeBody
-.route-body {
-  margin-top: $headerHeight;
-  margin-bottom: $footerHeight;
-  height: 100%;
-
-  h1 {
-    width: 100%;
-    margin: 25px auto;
-    text-align: center;
-  }
-
-  h2 {
-    text-align: center;
-    margin-top: 25px;
-  }
-
-  p {
-    width: 100%;
-    margin-top: 25px;
-  }
-}
-
-.logo-1 {
-  background-image: url("../assets/images/logo_1.png");
-  background-repeat: no-repeat;
-  margin-top: 95px;
-  margin-left: 20px; 
-  width: 150px; 
-  height: 150px;
-}
-
-.logo-2 {
-  background-image: url("../assets/images/logo_2.png");
-  background-repeat: no-repeat;
-  margin-top: 95px;
-  margin-left: 25px; 
-  width: 200px; 
-  height: 200px;
-}
-
-.logo-3 {
-  background-image: url("../assets/images/logo_3.png");
-  background-repeat: no-repeat;
-  margin-top: 95px;
-  margin-left: 50px; 
-  width: 300px; 
-  height: 300px;
-}
-
-.logo-4 {
-  background-image: url("../assets/images/logo_4.png");
-  background-repeat: no-repeat;
-  margin-top: 95px;
-  margin-left: 50px; 
-  width: 500px; 
-  height: 500px;
-}
-
-.logo-5 {
-  background-image: url("../assets/images/logo_5.png");
-  background-repeat: no-repeat;
-  margin-top: 0px;
-  margin-left: 20px; 
-  width: 90px; 
-  height: 90px;
-
-  @media (max-width: 575px) {
-    background-image: none;
-  }
+  width: 100%;
 }
 
 .logo-6 {
@@ -164,44 +30,6 @@ header {
   width: 90px;
   height: 90px;
   background-size: cover;
-
-  @media (max-width: 575px) {
-    background-image: none;
-  }
 }
 
 
-/**********************
-*********footer********
-**********************/
-footer {
-  position: fixed;
-  display: block;
-  width: 100%;
-  background: $headerColor;
-  color: $pColor;
-  height: $footerHeight;
-  bottom: 0;
-
-  nav, 
-  nav ul, 
-  nav ul li {
-    margin: 0;
-    padding: 0;
-  }
-
-  nav {
-    text-align: center;
-    margin: 6px;
-
-    ul li {
-      list-style-type: none;
-      display: inline-block;
-      margin-right: 20px;
-
-      &.last {
-        margin: 0;
-      }
-    }
-  }
-}
