@@ -42,7 +42,7 @@ a {
   -moz-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   cursor: pointer;
-  color: #4006e2; }
+  color: #6df557; }
   a:hover {
     color: #f8f9fa;
     -webkit-transition: 0.4s ease-in-out;
@@ -58,7 +58,7 @@ a {
   width: 50px;
   height: 50px;
   border-radius: 5%;
-  border: 10px solid #AAA8A5;
+  border: 10px solid #6df557;
   outline: none;
   transition: all 0.2s cubic-bezier(0, 1.26, 0.8, 1.28); }
   @media (min-width: 768px) {
@@ -68,7 +68,7 @@ a {
 #mobile-menu-button div {
   width: 30px;
   height: 4px;
-  background-color: #AAA8A5;
+  background-color: #6df557;
   margin: 4px -6px; }
 
 /***************************

@@ -101,10 +101,10 @@ $paragraphFont: 'sans-serif';
   $h1Color: #323334; // <h1>
 } @else if $colorScheme == 9 {
   // Color Scheme 9 (black, white, and grey Soft Contrast w/ dark bg and light letters) 
-  $attentionColor: #4006e2; // #ea7e3a; // anchors
+  $attentionColor: #6df557; // #4006e2; // #ea7e3a; // anchors
   $bgColor: #869ca9; // background-color
   $pColor: #f8f9fa; // <p>
-  $anchorColor: #AAA8A5; // <a>
+  $anchorColor: #6df557; // #AAA8A5; // <a>
   $activeColor: #f8f9fa; // #525354; // <a> active
   $headerColor: #323334; // #0F0F11; // #323334; // header
   $h1Color: #f8f9fa; // <h1>
