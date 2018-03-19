@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -22,28 +22,30 @@ import About from './components/pages/about.jsx';
 import Contact from './components/pages/contact.jsx';
 import NotFound from './components/pages/notFound.jsx';
 
-const App = () => {
-  return (
-    <Router>
-      <div className="app wrapper">
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div className="app wrapper">
 
-        <Route path='/' component={Header} />
+          <Route path='/' component={Header} />
 
-        <Switch>
-          <Route exact path='/' component={Homepage} />
-          <Route exact path='/Skills' component={Skills} />
-          <Route exact path='/Blog' component={Blog} />
-          <Route exact path='/About' component={About} />
-          <Route exact path='/Contact' component={Contact} />
-          <Route path='/404' component={NotFound} />
-          <Redirect to='/404' />
-        </Switch>
+          <Switch>
+            <Route exact path='/' render={ (routerProps) => <Homepage routerProps={routerProps} /> } />
+            <Route exact path='/Skills' render={ (routerProps) => <Skills routerProps={routerProps} /> } />
+            <Route exact path='/Blog' render={ (routerProps) => <Blog routerProps={routerProps} /> } />
+            <Route exact path='/About' render={ (routerProps) => <About routerProps={routerProps} /> } />
+            <Route exact path='/Contact' render={ (routerProps) => <Contact routerProps={routerProps} /> } />
+            <Route path='/404' render={ (routerProps) => <NotFound routerProps={routerProps} /> } />
+            <Redirect to='/404' />
+          </Switch>
 
-        <Route path='/' component={Footer} />
-              
-      </div>
-    </Router>
-  );
+          <Route path='/' component={Footer} />
+                
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
