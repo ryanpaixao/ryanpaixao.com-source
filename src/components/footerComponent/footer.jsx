@@ -13,7 +13,7 @@ const Footer = (props) => {
       <nav>
         <ul>
           <li>
-            <a href="https://github.com/ryanpaixao">
+            <a href='https://github.com/ryanpaixao' target='_blank' rel='noopener noreferrer'>
               <img
                 src={githubLogo}
                 alt="Github logo"
@@ -21,7 +21,7 @@ const Footer = (props) => {
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/ryanpaixao/">
+            <a href='https://www.linkedin.com/in/ryanpaixao/' target='_blank' rel='noopener noreferrer'>
               <img
                 src={linkedinLogo}
                 alt="LinkedIn logo"
@@ -29,7 +29,7 @@ const Footer = (props) => {
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/thecounthimself">
+            <a href='https://twitter.com/thecounthimself' target='_blank' rel='noopener noreferrer'>
               <img
                 src={twitterLogo} 
                 alt="Twitter logo" 

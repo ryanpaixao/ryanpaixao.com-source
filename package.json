@@ -1,6 +1,7 @@
 {
   "name": "ryanpaixao.com-source",
   "version": "0.1.0",
+  "homepage": "http://ryanpaixao.github.io",
   "private": true,
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
