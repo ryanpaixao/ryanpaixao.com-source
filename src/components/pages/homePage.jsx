@@ -37,8 +37,14 @@ const bodyTextParams = [
 
 class Homepage extends Component {
   render() {
+    const textArray = [
+      'A Frontend Web Developer from South Florida.',
+      'A Frontend Web Developer originally from the Boston Area.',
+      'A Frontend Web Developer who loves to travel.'
+    ];
+    const index = Math.floor((Math.random() * textArray.length) + 0);
     const bodyText = <p>
-      I'm Ryan Paixao.<br/> A Frontend Web Developer from South Florida.<br/><br/> Find out more <a href='/About'>about</a> me.
+      I'm Ryan Paixao.<br/> {textArray[index]} <br/><br/> Find out more <a href='/About'>about</a> me.
     </p>;
 
     return (
