@@ -14,7 +14,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: "Alegreya", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 137%;
@@ -24,7 +24,7 @@ body {
   height: 100%; }
 
 h1 {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   font-size: 40px;
   color: #f8f9fa;
   width: 100%;
@@ -32,11 +32,11 @@ h1 {
   text-align: center; }
 
 h2 {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   color: #f8f9fa; }
 
 a {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   text-decoration: none;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
@@ -65,7 +65,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: "Alegreya", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 137%;
@@ -75,7 +75,7 @@ body {
   height: 100%; }
 
 h1 {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   font-size: 40px;
   color: #f8f9fa;
   width: 100%;
@@ -83,11 +83,11 @@ h1 {
   text-align: center; }
 
 h2 {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   color: #f8f9fa; }
 
 a {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   text-decoration: none;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
@@ -146,7 +146,7 @@ a {
       grid-column: 1 / -1; } }
   .content .header-title {
     text-align: center;
-    font-family: "Nunito", serif;
+    font-family: "Didact Gothic", serif;
     font-size: 40px;
     margin-bottom: 8%; }
 
@@ -191,7 +191,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: "Alegreya", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 137%;
@@ -201,7 +201,7 @@ body {
   height: 100%; }
 
 h1 {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   font-size: 40px;
   color: #f8f9fa;
   width: 100%;
@@ -209,11 +209,11 @@ h1 {
   text-align: center; }
 
 h2 {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   color: #f8f9fa; }
 
 a {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   text-decoration: none;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
@@ -306,7 +306,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: "Alegreya", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 137%;
@@ -316,7 +316,7 @@ body {
   height: 100%; }
 
 h1 {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   font-size: 40px;
   color: #f8f9fa;
   width: 100%;
@@ -324,11 +324,11 @@ h1 {
   text-align: center; }
 
 h2 {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   color: #f8f9fa; }
 
 a {
-  font-family: "Nunito", serif;
+  font-family: "Didact Gothic", serif;
   text-decoration: none;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
@@ -355,7 +355,7 @@ a {
   .skills-content .skills-header-title {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    font-family: "Nunito", serif;
+    font-family: "Didact Gothic", serif;
     font-size: 40px;
     margin-bottom: 5%; }
   .skills-content .skills-body {

@@ -8,7 +8,7 @@ import {
 
 // import styling
 import 'reset-css/reset.css';
-import './scss/App.css';
+import './css/App.css';
 
 // import page framework components
 import Header from './components/headerComponent/header.jsx';

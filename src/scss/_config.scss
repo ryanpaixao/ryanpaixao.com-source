@@ -5,7 +5,7 @@
 $colorScheme: 9;
 
 // select Font collection (1 - 7)
-$fontCollection: 1;
+$fontCollection: 9;
 
 // Declare Color variables
 $attentionColor: black; // Base color
@@ -141,6 +141,14 @@ $paragraphFont: 'sans-serif';
   // Oswald & Didact Gothic
   $headerFont: 'Oswald', serif;
   $paragraphFont: 'Didact Gothic', sans-serif;
+} @else if $fontCollection == 8 {
+  // Ubuntu & Didact Gothic
+  $headerFont: 'Ubuntu', serif;
+  $paragraphFont: 'Didact Gothic', sans-serif;
+} @else if $fontCollection == 9 {
+  // Ubuntu & Didact Gothic
+  $headerFont: 'Didact Gothic', serif;
+  $paragraphFont: 'Ubuntu', sans-serif;
 }
 
 $h1fontSize: 40px;
