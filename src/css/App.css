@@ -390,7 +390,7 @@ a {
 *******Container*******
 **********************/
 .app {
-  background-image: url("../assets/images/me_smokey.jpg");
+  background-image: url("../assets/images/background/me_smokey.jpg");
   background-repeat: no-repeat;
   background-position: right center;
   background-attachment: fixed;
@@ -402,7 +402,7 @@ a {
   width: 100%; }
 
 .logo-6 {
-  background-image: url("../assets/images/logos/5.png");
+  background-image: url("../assets/images/logos/ryanpaixao_logo.png");
   background-repeat: no-repeat;
   margin: auto;
   width: 70px;
