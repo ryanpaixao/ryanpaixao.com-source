@@ -107,7 +107,8 @@ a {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 80px 1fr auto; }
+  grid-template-rows: 80px 1fr auto;
+  align-items: center; }
 
 /***************
 ****header****
@@ -140,7 +141,7 @@ a {
   margin: 0px 15px 100px 15px;
   grid-row: 2 / -2;
   grid-column: 4 / 10;
-  align-items: end; }
+  align-items: center; }
   @media (max-width: 767px) {
     .content {
       grid-column: 1 / -1; } }
@@ -150,7 +151,8 @@ a {
     font-size: 40px;
     margin-bottom: 8%; }
   .content .text-body {
-    margin-top: 100px; }
+    margin-top: 13%;
+    margin-bottom: 18%; }
 
 /***************
 *****footer*****

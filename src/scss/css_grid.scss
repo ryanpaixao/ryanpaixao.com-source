@@ -10,6 +10,7 @@ $headerHeight: 80px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: $headerHeight 1fr auto;
+  align-items: center;
 }
 
 /***************
@@ -47,7 +48,7 @@ $headerHeight: 80px;
   margin: 0px 15px 100px 15px;
   grid-row: 2 / -2;
   grid-column: 4 / 10; 
-  align-items: end;
+  align-items: center;
 
   @media (max-width: 767px) {
     grid-column: 1 / -1;
@@ -61,7 +62,8 @@ $headerHeight: 80px;
   }
 
   .text-body {
-    margin-top: 100px;
+    margin-top: 13%;
+    margin-bottom: 18%;
   }
 }
 
