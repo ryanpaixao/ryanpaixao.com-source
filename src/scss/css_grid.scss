@@ -9,7 +9,7 @@ $headerHeight: 80px;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: $headerHeight 60px 1fr auto;
+  grid-template-rows: $headerHeight 1fr auto;
 }
 
 /***************
@@ -44,8 +44,8 @@ $headerHeight: 80px;
 ****content****
 ***************/
 .content {
-  margin: 0px 15px 80px 15px;
-  grid-row: 3 / -2;
+  margin: 0px 15px 100px 15px;
+  grid-row: 2 / -2;
   grid-column: 4 / 10; 
   align-items: end;
 
@@ -58,6 +58,10 @@ $headerHeight: 80px;
     font-family: $headerFont;
     font-size: $h1fontSize;
     margin-bottom: 8%;
+  }
+
+  .text-body {
+    margin-top: 100px;
   }
 }
 
