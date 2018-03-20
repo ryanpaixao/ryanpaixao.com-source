@@ -1,7 +1,7 @@
 {
   "name": "ryanpaixao.com-source",
   "version": "0.1.0",
-  "homepage": "http://ryanpaixao.github.io",
+  "homepage": "https://ryanpaixao.github.io",
   "private": true,
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
@@ -14,10 +14,12 @@
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/css/ -o src/css/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "watch-css": "npm run build-css && node-sass-chokidar src/css/ -o src/css/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && ./scripts/deploy.sh"
+  },
+  "devDependencies": {}
 }
