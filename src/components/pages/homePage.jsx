@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {
+  Link
+} from 'react-router-dom';
 
 // components
 import TransitionBoiler from '../reusableComponents/cssTransitions/transitionBoiler';
@@ -44,7 +47,7 @@ class Homepage extends Component {
     ];
     const index = Math.floor((Math.random() * textArray.length) + 0);
     const bodyText = <p>
-      I'm Ryan Paixao.<br/> {textArray[index]} <br/><br/> Find out more <a href='/About'>about</a> me.
+      I'm Ryan Paixao.<br/> {textArray[index]} <br/><br/> Find out more <Link to='/About'>about</Link> me.
     </p>;
 
     return (

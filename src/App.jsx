@@ -31,12 +31,12 @@ class App extends Component {
           <Route path='/' component={Header} />
 
           <Switch>
-            <Route exact path='/' render={ (routerProps) => <Homepage routerProps={routerProps} /> } />
-            <Route exact path='/Skills' render={ (routerProps) => <Skills routerProps={routerProps} /> } />
-            <Route exact path='/Blog' render={ (routerProps) => <Blog routerProps={routerProps} /> } />
-            <Route exact path='/About' render={ (routerProps) => <About routerProps={routerProps} /> } />
-            <Route exact path='/Contact' render={ (routerProps) => <Contact routerProps={routerProps} /> } />
-            <Route path='/404' render={ (routerProps) => <NotFound routerProps={routerProps} /> } />
+            <Route exact path='/' component={Homepage} />
+            <Route exact path='/Skills' component={Skills} />
+            <Route exact path='/Blog' component={Blog} />
+            <Route exact path='/About' component={About} />
+            <Route exact path='/Contact' component={Contact} />
+            <Route path='/404' component={NotFound} />
             <Redirect to='/404' />
           </Switch>
 
