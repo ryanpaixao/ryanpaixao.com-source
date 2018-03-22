@@ -101,11 +101,11 @@ $paragraphFont: 'sans-serif';
   $h1Color: #323334; // <h1>
 } @else if $colorScheme == 9 {
   // Color Scheme 9 (black, white, and grey Soft Contrast w/ dark bg and light letters) 
-  $attentionColor: #60ece8; // #6df557; // #4006e2; // #ea7e3a; // anchors
-  $bgColor: #869ca9; // background-color
+  $attentionColor: #7AFFFD; // #60ece8; // #6df557; // #4006e2; // #ea7e3a; // anchors
+  $bgColor: #6c6c6c; // background-color
   $pColor: #f8f9fa; // <p>
   $anchorColor: #6df557; // #AAA8A5; // <a>
-  $activeColor: #f8f9fa; // #525354; // <a> active
+  $activeColor: #6df557; // #f8f9fa; // #525354; // <a> active
   $headerColor: #323334; // #0F0F11; // #323334; // header
   $h1Color: #f8f9fa; // <h1>
 }
@@ -153,10 +153,27 @@ $paragraphFont: 'sans-serif';
 
 $h1fontSize: 40px;
 
+/****************************************
+************default: heights************
+****************************************/
+
+html {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
 /********************************************* 
 ****************fonts & colors**************** 
 *********************************************/
 body {
+  height: 100%;
   font-family: $paragraphFont;
   font-style: normal;
   font-size: 22px;

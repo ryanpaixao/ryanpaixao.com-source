@@ -13,6 +13,7 @@
     "reset-css": "2.2.1"
   },
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
     "build-css": "node-sass-chokidar src/css/ -o src/css/",
     "watch-css": "npm run build-css && node-sass-chokidar src/css/ -o src/css/ --watch --recursive",
     "start": "react-scripts start",
@@ -21,5 +22,7 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && ./scripts/deploy.sh"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "source-map-explorer": "1.5.0"
+  }
 }
