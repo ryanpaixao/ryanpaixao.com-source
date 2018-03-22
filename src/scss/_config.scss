@@ -156,10 +156,6 @@ $h1fontSize: 40px;
 /********************************************* 
 ****************fonts & colors**************** 
 *********************************************/
-html {
-  height: 100%;
-}
-
 body {
   font-family: $paragraphFont;
   font-style: normal;
@@ -168,8 +164,6 @@ body {
   font-weight: 400;
   color: $pColor;
   background-color: $bgColor;
-  // overflow: auto;
-  height: 100%;
 }
 
 h1 {
