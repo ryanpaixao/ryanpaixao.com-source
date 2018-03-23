@@ -24,6 +24,9 @@ const Menu = ({menuVisibility, handleMouseDown}) => {
         <li>
           <Link to="/Contact">Contact</Link>
         </li>
+        <li>
+          <p><i className='arrow up'/></p>
+        </li>
       </ul>
     </nav>
   );

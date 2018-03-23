@@ -20,10 +20,10 @@
 }
 #mobile-menu-button {
   div {
-    width: 30px;
+    width: 39px;
     height: 4px;
     background-color: $bgColor;
-    margin: 4px -6px;
+    margin: 4px -10px;
   }
 }
 
@@ -46,6 +46,14 @@
     z-index: 1000;
     text-align: center;
     font-size: 27px;
+
+    li {
+      margin: 4% auto;
+    }
+
+    li:last-child {
+      background: $attentionColor;
+    }
   }
    
   #slide-out-menu.hide {
@@ -55,10 +63,6 @@
   #slide-out-menu.show {
     transform: translate3d(0, $menuHeight, 0);
     overflow: hidden;
-  }
-   
-  #slide-out-menu li {
-    margin: 4% auto;
   }
 }
 
@@ -88,6 +92,9 @@
 
       li {
         margin-right: 15px;
+      }
+      li:last-child {
+        display: none;
       }
     }
   }
