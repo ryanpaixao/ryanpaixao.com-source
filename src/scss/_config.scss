@@ -181,11 +181,32 @@ main {
 /********************************************* 
 ****************fonts & colors**************** 
 *********************************************/
+
+// mobile & tablet
+@media (max-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+
+// desktop
+@media (min-width: 768px) {
+  body {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: $h1fontSize;
+  }
+}
+
+
 body {
   height: 100%;
   font-family: $paragraphFont;
   font-style: normal;
-  font-size: 22px;
   line-height: 137%;
   font-weight: 400;
   color: $pColor;
@@ -194,7 +215,6 @@ body {
 
 h1 {
   font-family: $headerFont;
-  font-size: $h1fontSize;
   color: $h1Color;
   width: 100%;
   margin: 25px auto;

@@ -10,10 +10,10 @@ const Header = (props) => {
   let urlIsRoot = props.match.isExact ? {display: 'none'} : {};
 
   return (
-    <header style={urlIsRoot} className="header">
-      <div className="logo">
-        <Link to="/">
-          <div className="logo-6" />
+    <header style={urlIsRoot} className='header'>
+      <div className='logo'>
+        <Link to='/About'>
+          <div className='logo-6' />
         </Link>
       </div>
 

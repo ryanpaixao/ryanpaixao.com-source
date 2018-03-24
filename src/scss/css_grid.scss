@@ -42,6 +42,20 @@ $headerHeight: 80px;
 }
 
 /***************
+****home-page****
+***************/
+.home-page {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: $headerHeight 1fr auto;
+  align-items: center;
+}
+
+/***************
 ****content****
 ***************/
 .content {
@@ -51,13 +65,12 @@ $headerHeight: 80px;
   align-items: center;
 
   @media (max-width: 767px) {
-    grid-column: 1 / -1;
+    grid-column: 2 / -2;
   }
 
   .header-title {
     text-align: center;
     font-family: $headerFont;
-    font-size: $h1fontSize;
     margin-bottom: 8%;
   }
 

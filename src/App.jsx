@@ -21,6 +21,7 @@ import Blog from './components/pages/blog.jsx';
 import About from './components/pages/about.jsx';
 import Contact from './components/pages/contact.jsx';
 import NotFound from './components/pages/notFound.jsx';
+import BgImage from './components/bgImage/BgImage';
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
         <div className="app wrapper">
 
           <Route path='/' component={Header} />
+          <Route path='/' component={BgImage} />
 
           <Switch>
             <Route exact path='/' component={Homepage} />

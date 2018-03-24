@@ -55,7 +55,7 @@ class Homepage extends Component {
         <div className='header-title'>
           <TransitionBoiler 
             styleParameters={helloParams} 
-            text={'Hello World!'} 
+            text={<h1>Hello World!</h1>} 
             sharedDefaults={{}}
           />
         </div>

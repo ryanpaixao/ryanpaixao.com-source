@@ -7,22 +7,22 @@ const Menu = ({menuVisibility, handleMouseDown}) => {
   let visibility = menuVisibility ? "show" : "hide";
 
   return (
-    <nav id="slide-out-menu" onClick={handleMouseDown} className={visibility}>
+    <nav id='slide-out-menu' onClick={handleMouseDown} className={visibility}>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to='/Skills'>Skills</Link>
         </li>
         <li>
-          <Link to="/Skills">Skills</Link>
+          <a href='https://github.com/ryanpaixao/ryanpaixao.com-source' target='_blank' rel='noopener noreferrer'>Source</a>
         </li>
         <li>
-          <Link to="/Blog">Blog</Link>
+          <Link to='/Blog'>Blog</Link>
         </li>
         <li>
-          <Link to="/About">About</Link>
+          <Link to='/About'>About</Link>
         </li>
         <li>
-          <Link to="/Contact">Contact</Link>
+          <Link to='/Contact'>Contact</Link>
         </li>
         <li>
           <p><i className='arrow up'/></p>

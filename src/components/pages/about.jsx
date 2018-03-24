@@ -4,8 +4,7 @@ const About = () => {
   return (
     <div className='content'>
 
-      <div className='text-body'>
-        <h1 className='header-title'>About Me</h1>
+      <div className='text-body' style={{marginTop: '20%'}}>
         <p>
           I'm a programmer who loves what I do. 
           I get great enjoyment from creating something new. 
