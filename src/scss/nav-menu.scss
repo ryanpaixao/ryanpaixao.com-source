@@ -4,7 +4,7 @@
 ******button******  
 *****************/
 
-#mobile-menu-button {
+.mobile-nav-button {
   background-color: $pColor;
   margin: 10%;
   width: 50px;
@@ -18,7 +18,7 @@
     display: none;
   }
 }
-#mobile-menu-button {
+.mobile-nav-button {
   div {
     width: 39px;
     height: 4px;
@@ -28,14 +28,14 @@
 }
 
 /***************************
-*******slide-out-menu*******
+*******slide-out-nav*******
 ***************************/
 // tablet and mobile
 @media (max-width: 767px) {
   $menuHeight: 100vh;
   $menuWidth: 100vw;
 
-  #slide-out-menu {
+  .slide-out-nav {
     width: $menuWidth;
     background-color: $headerColor;
     position: fixed;
@@ -56,11 +56,11 @@
     }
   }
    
-  #slide-out-menu.hide {
+  .slide-out-nav.hide {
     transform: translate3d(0, 0vh, 0);
   }
    
-  #slide-out-menu.show {
+  .slide-out-nav.show {
     transform: translate3d(0, $menuHeight, 0);
     overflow: hidden;
   }
@@ -68,7 +68,7 @@
 
 // desktop
 @media (min-width: 768px) {
-  #slide-out-menu {
+  .slide-out-nav {
     background-color: $headerColor;
 
     display: inline-grid;
