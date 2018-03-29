@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+exports.rawCodeExample = `import React, { Component } from 'react';
 
 // import svg sprite
 import skillSprites from '../../assets/images/icons/skills/skills_svg_sprite.svg';
 
 const skillsObj = {
-'Frontend Languages': ['Javascript', 'HTML5', 'CSS3'],
-'Backend Languages': ['Node.js', 'Python 2.x', 'Python 3.x'],
-'Frameworks & Libraries': ['React.js', 'Jquery', 'Bootstrap'],
-'Build Tools & Package Managers': ['NPM', 'Bower', 'Brunch', 'Webpack'],
-'Task & Project Management': ['Jira', 'Git', 'Github', 'Dropbox', 'Slack'],
-'Testing Suites & Libraries': ['Mocha', 'Enzyme', 'JSDOM', 'Chai'],
-'Virtualization': ['Vagrant', 'VirtualBox', 'Docker'],
-'Testing Styles': ['TDD', 'BDD', 'Unit Testing'],
-'Operating Systems': ['Linux', 'Windows']
+  'Frontend Languages': ['Javascript', 'HTML5', 'CSS3'],
+  'Backend Languages': ['Node.js', 'Python 2.x', 'Python 3.x'],
+  'Frameworks & Libraries': ['React.js', 'Jquery', 'Bootstrap'],
+  'Build Tools & Package Managers': ['NPM', 'Bower', 'Brunch', 'Webpack'],
+  'Task & Project Management': ['Jira', 'Git', 'Github', 'Dropbox', 'Slack'],
+  'Testing Suites & Libraries': ['Mocha', 'Enzyme', 'JSDOM', 'Chai'],
+  'Virtualization': ['Vagrant', 'VirtualBox', 'Docker'],
+  'Testing Styles': ['TDD', 'BDD', 'Unit Testing'],
+  'Operating Systems': ['Linux', 'Windows']
 }
 
 const spriteNames = {
@@ -110,3 +110,4 @@ class Skills extends Component {
 }
 
 export default Skills;
+`;

@@ -11,17 +11,19 @@ import 'reset-css/reset.css';
 import './css/App.css';
 
 // import page framework components
-import Header from './components/headerComponent/header.jsx';
-import Footer from './components/footerComponent/footer.jsx';
+import Header from './components/headerComponent/Header';
+import Footer from './components/footerComponent/Footer';
+import BgImage from './components/bgImage/BgImage';
+import ViewCode from './components/viewCode/ViewCode';
+import rawCode from './components/pages/rawFiles/rawFilesImport';
 
 // import individual page components
-import Homepage from './components/pages/homePage.jsx';
-import Skills from './components/pages/skills.jsx';
-import Blog from './components/pages/blog.jsx';
-import About from './components/pages/about.jsx';
-import Contact from './components/pages/contact.jsx';
-import NotFound from './components/pages/notFound.jsx';
-import BgImage from './components/bgImage/BgImage';
+import Homepage from './components/pages/HomePage';
+import Skills from './components/pages/Skills';
+import Blog from './components/pages/Blog';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
+import NotFound from './components/pages/NotFound';
 
 class App extends Component {
   render() {
@@ -32,15 +34,30 @@ class App extends Component {
           <Route path='/' component={Header} />
           <Route path='/' component={BgImage} />
 
-          <Switch>
-            <Route exact path='/' component={Homepage} />
-            <Route exact path='/Skills' component={Skills} />
-            <Route exact path='/Blog' component={Blog} />
-            <Route exact path='/About' component={About} />
-            <Route exact path='/Contact' component={Contact} />
-            <Route path='/404' component={NotFound} />
-            <Redirect to='/404' />
-          </Switch>
+          <div className='content'>
+            <Switch>
+              <Route exact path='/' component={Homepage} />
+              <Route exact path='/Skills' component={Skills} />
+              <Route exact path='/Blog' component={Blog} />
+              <Route exact path='/About' component={About} />
+              <Route exact path='/Contact' component={Contact} />
+              <Route path='/404' component={NotFound} />
+              <Redirect to='/404' />
+            </Switch>
+           
+            <Route 
+              path='/' 
+              render={
+                (props) => { 
+                  let rc = rawCode[props.location.pathname] === undefined 
+                    ? rawCode["/NotFound"].rawCodeExample 
+                    : rawCode[props.location.pathname].rawCodeExample;
+
+                  return <ViewCode filename={props.location.pathname} rawCodeExample={rc}  {...props}/>
+                }
+              } 
+            />
+          </div>
 
           <Route path='/' component={Footer} />
                 

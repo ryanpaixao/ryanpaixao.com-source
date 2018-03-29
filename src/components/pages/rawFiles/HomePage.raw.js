@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+exports.rawCodeExample = `import React, { Component } from 'react';
 import {
   Link
 } from 'react-router-dom';
 
 // components
-import TransitionBoiler from '../reusableComponents/cssTransitions/transitionBoiler';
+import TransitionBoiler from '../reusableComponents/cssTransitions/TransitionBoiler';
 
-const endColor = '#f0f5f5'; // '#d1e0e0'; // '#000033'; // '#000066', // #4006e2',
+const endColor = '#f0f5f5'; 
 
 const helloParams = [
   {
@@ -73,3 +73,4 @@ class Homepage extends Component {
 }
 
 export default Homepage;
+`;

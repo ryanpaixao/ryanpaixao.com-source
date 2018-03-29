@@ -9,6 +9,7 @@
     "react-dom": "^16.2.0",
     "react-router-dom": "4.2.2",
     "react-scripts": "1.1.1",
+    "react-syntax-highlighter": "7.0.2",
     "react-transition-group": "2.2.1",
     "reset-css": "2.2.1"
   },
@@ -17,10 +18,12 @@
     "build-css": "node-sass-chokidar src/css/ -o src/css/",
     "watch-css": "npm run build-css && node-sass-chokidar src/css/ -o src/css/ --watch --recursive",
     "start": "react-scripts start",
+    "prebuild": "npm run rawcode",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && ./scripts/deploy.sh"
+    "deploy": "npm run build && ./scripts/deploy.sh",
+    "rawcode": "./scripts/rawcode.sh"
   },
   "devDependencies": {
     "source-map-explorer": "1.5.0"
