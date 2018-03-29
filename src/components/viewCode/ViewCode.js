@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
-// syntax highlighters
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import hljsStyle from 'react-syntax-highlighter/styles/hljs/rainbow';
-
 // components
 import Menu from '../reusableComponents/menu/ToggledMenu';
+
+// syntax highlighters
+import SyntaxHighlighter, { registerLanguage } from 'react-syntax-highlighter/prism-light';
+import jsx from 'react-syntax-highlighter/languages/prism/jsx';
+import highlighterStyle from 'react-syntax-highlighter/styles/prism/xonokai';
+
+registerLanguage('jsx', jsx);
 
 const ViewCodeButton = ({handleMouseDown}) => {
   return (
@@ -30,8 +33,8 @@ export default class ViewCode extends Component {
           <h1>ryanpaixao.com{this.props.location.pathname}</h1>
           <div style={{fontSize: '16px'}}>
             <SyntaxHighlighter 
-              language='javascript' 
-              style={hljsStyle}
+              language='jsx' 
+              style={highlighterStyle}
               useInlineStyles={true}
               showLineNumbers={true}
             >
