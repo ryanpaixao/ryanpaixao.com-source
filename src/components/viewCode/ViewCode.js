@@ -14,6 +14,7 @@ const ViewCodeButton = ({handleMouseDown}) => {
   return (
     <button 
       className='view-code-button'
+      aria-label='show page react code'
       onMouseDown={handleMouseDown}
     >
       <div>
@@ -31,16 +32,12 @@ export default class ViewCode extends Component {
       return (
         <div onClick={handleMouseDown} className={'view-code-container ' + visibility}>
           <h1>ryanpaixao.com{this.props.location.pathname}</h1>
-          <div style={{fontSize: '16px'}}>
-            <SyntaxHighlighter 
-              language='jsx' 
-              style={highlighterStyle}
-              useInlineStyles={true}
-              showLineNumbers={true}
-            >
-              {this.props.rawCodeExample}
-            </SyntaxHighlighter>
-          </div>
+          <SyntaxHighlighter 
+            language='jsx' 
+            style={highlighterStyle}
+          >
+            {this.props.rawCodeExample}
+          </SyntaxHighlighter>
         </div>
       );
     };

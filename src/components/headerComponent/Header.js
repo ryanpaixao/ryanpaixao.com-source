@@ -59,7 +59,7 @@ const Header = (props) => {
         </Link>
       </div>
 
-      <Menu MenuContent={MenuContent} MenuButton={MenuButton} classname={'nav-menu'} />
+      <Menu MenuContent={MenuContent} MenuButton={MenuButton} styleClass={'nav-menu'} />
     </header>
   );
 }

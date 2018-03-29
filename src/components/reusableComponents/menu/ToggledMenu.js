@@ -28,7 +28,7 @@ export default class ToggledMenu extends Component {
     const MenuButton = this.props.MenuButton;
 
     return (
-      <div className={this.props.classname}>
+      <div className={this.props.styleClass}>
         <MenuButton 
           handleMouseDown={this.handleMouseDown} 
         />
