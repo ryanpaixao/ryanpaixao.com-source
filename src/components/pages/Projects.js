@@ -31,7 +31,8 @@ const Projects = (props) => {
           and the “Plans & Pricing” modal popup. 
           For the client UI I would connect existing backend API requests/rules, 
           and add them to the UI. 
-          Giving users an intuitive, easy to use graphical interface. 
+          Giving users an intuitive, easy to use graphical interface.
+          I also introduced automated testing to the UI's setting's code.
         </p>
       </div>
 
