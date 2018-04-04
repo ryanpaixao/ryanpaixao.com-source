@@ -1,12 +1,13 @@
-@import "../scss/_config.scss";
-@import "../scss/css-grid.scss";
-@import "../scss/nav-menu.scss";
-@import "../scss/skills.scss";
-@import "../scss/view-code.scss";
+@import "./_config.scss";
+@import "./css-grid.scss";
+@import "./nav-menu.scss";
+@import "./skills.scss";
+@import "./view-code.scss";
+@import "./projects.scss";
 
 /**********************
 *******Container*******
-**********************/
+***********************/
 // container
 .bg-image {
   background-image: url('../assets/images/background/fade_top_bottom.jpg');
@@ -25,14 +26,3 @@
   opacity: 0.2;
   z-index: -1;
 }
-
-.logo-6 {
-  background-image: url("../assets/images/logos/ryanpaixao_logo.png");
-  background-repeat: no-repeat;
-  margin: auto;
-  width: 70px;
-  height: 70px;
-  background-size: cover;
-}
-
-

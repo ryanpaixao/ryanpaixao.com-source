@@ -6,9 +6,7 @@ const BgImage = (props) => {
     : {};
 
   return (
-    <div className='bg-image' style={urlIsRoot}>
-      
-    </div>
+    <div className='bg-image' style={urlIsRoot} />
   )
 }
 

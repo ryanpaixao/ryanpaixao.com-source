@@ -3,6 +3,9 @@ import {
   Link
 } from 'react-router-dom';
 
+// images
+import Logo from '../../assets/images/logos/ryanpaixao_logo.svg';
+
 // components
 import Menu from '../reusableComponents/menu/ToggledMenu';
 
@@ -26,7 +29,7 @@ const MenuContent = ({menuVisibility, handleMouseDown}) => {
     <nav onClick={handleMouseDown} className={'slide-out-nav ' + visibility}>
       <ul>
         <li>
-          <Link to='/Skills'>Skills</Link>
+          <Link to='/About'>About</Link>
         </li>
         <li>
           <a href='https://github.com/ryanpaixao/ryanpaixao.com-source' target='_blank' rel='noopener noreferrer'>Source</a>
@@ -35,7 +38,10 @@ const MenuContent = ({menuVisibility, handleMouseDown}) => {
           <Link to='/Blog'>Blog</Link>
         </li>
         <li>
-          <Link to='/About'>About</Link>
+          <Link to='/Projects'>Projects</Link>
+        </li>
+        <li>
+          <Link to='/Skills'>Skills</Link>
         </li>
         <li>
           <Link to='/Contact'>Contact</Link>
@@ -55,7 +61,7 @@ const Header = (props) => {
     <header style={urlIsRoot} className='header'>
       <div className='logo'>
         <Link to='/About'>
-          <div className='logo-6' />
+          <img src={Logo} alt='RP logo' />
         </Link>
       </div>
 

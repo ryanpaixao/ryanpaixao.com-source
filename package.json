@@ -4,29 +4,28 @@
   "homepage": ".",
   "private": true,
   "dependencies": {
-    "node-sass-chokidar": "0.0.3",
-    "react": "^16.2.0",
+    "node-sass-chokidar": "^0.0.3",
+    "react": "^16.3.0",
     "react-dom": "^16.2.0",
-    "react-router-dom": "4.2.2",
-    "react-scripts": "1.1.1",
-    "react-syntax-highlighter": "7.0.2",
-    "react-transition-group": "2.2.1",
-    "reset-css": "2.2.1"
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.1",
+    "react-syntax-highlighter": "^7.0.2",
+    "react-transition-group": "^2.2.1",
+    "reset-css": "^2.2.1"
   },
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",
-    "build-css": "node-sass-chokidar src/css/ -o src/css/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/css/ -o src/css/ --watch --recursive",
+    "build-css": "node-sass-chokidar src/scss/ -o src/css/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/scss/ -o src/css/ --watch --recursive",
     "start": "react-scripts start",
     "prebuild": "npm run rawcode",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "npm run build && ./scripts/deploy.sh",
-    "rawcode": "./scripts/rawcode.sh",
-    "explore": "source-map-explorer ./build/static/js/main.*.js"
+    "rawcode": "./scripts/rawcode.sh"
   },
   "devDependencies": {
-    "source-map-explorer": "1.5.0"
+    "source-map-explorer": "^1.5.0"
   }
 }

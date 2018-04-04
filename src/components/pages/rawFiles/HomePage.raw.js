@@ -51,7 +51,7 @@ class Homepage extends Component {
     </p>;
 
     return (
-      <div className='content' style={{textAlign: 'center'}}>
+      <div className='standard-content' style={{textAlign: 'center'}}>
         <div className='header-title'>
           <TransitionBoiler 
             styleParameters={helloParams} 

@@ -2,9 +2,9 @@ exports.rawCodeExample = `import React from 'react';
 
 const About = () => {
   return (
-    <div className='content'>
+    <div className='standard-content'>
 
-      <div className='text-body' style={{marginTop: '20%'}}>
+      <div className='text-body'>
         <p>
           I'm a programmer who loves what I do. 
           I get great enjoyment from creating something new. 
