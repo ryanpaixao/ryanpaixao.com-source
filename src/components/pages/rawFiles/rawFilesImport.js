@@ -3,6 +3,7 @@ import Blog from './Blog.raw.js';
 import Contact from './Contact.raw.js';
 import HomePage from './HomePage.raw.js';
 import NotFound from './NotFound.raw.js';
+import Projects from './Projects.raw.js';
 import Skills from './Skills.raw.js';
 
 const rawCode = {
@@ -11,6 +12,7 @@ const rawCode = {
   '/Contact': Contact,
   '/': HomePage,
   '/NotFound': NotFound,
+  '/Projects': Projects,
   '/Skills': Skills,
 };
 

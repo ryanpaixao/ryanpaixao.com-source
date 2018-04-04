@@ -2,7 +2,7 @@ exports.rawCodeExample = `import React from 'react';
 
 const Blog = () => {
   return (
-    <div className='content'>
+    <div className='standard-content'>
       <div className='text-body'>
         <h1 className='header-title'>Blog</h1>
 

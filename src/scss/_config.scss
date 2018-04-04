@@ -106,7 +106,7 @@ $paragraphFont: 'sans-serif';
   $pColor: #f8f9fa; // <p>
   $anchorColor: #6df557; // #AAA8A5; // <a>
   $activeColor: #7ebbf9; // #61f1b7; // #6df557; // #f8f9fa; // #525354; // <a> active
-  $headerColor: #323334; // #0F0F11; // #323334; // header
+  $headerColor: #2b2d2e; // #323334; // #0F0F11; // #323334; // header
   $h1Color: #f8f9fa; // <h1>
 } @else if $colorScheme == 10 {
   // Color Scheme 10
@@ -166,15 +166,7 @@ $h1fontSize: 40px;
 ************default: heights************
 ****************************************/
 
-html {
-  height: 100%;
-}
-
-main {
-  height: 100%;
-}
-
-#root {
+html, main, #root {
   height: 100%;
 }
 
@@ -187,6 +179,9 @@ main {
   body {
     font-size: 18px;
   }
+  h2 {
+    font-size: 24px;
+  }
   h1 {
     font-size: 30px;
   }
@@ -197,8 +192,11 @@ main {
   body {
     font-size: 22px;
   }
+  h2 {
+    font-size: 30px;
+  }
   h1 {
-    font-size: $h1fontSize;
+    font-size: 40px;
   }
 }
 

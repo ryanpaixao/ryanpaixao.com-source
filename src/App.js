@@ -21,6 +21,7 @@ import rawCode from './components/pages/rawFiles/rawFilesImport';
 import Homepage from './components/pages/HomePage';
 import Skills from './components/pages/Skills';
 import Blog from './components/pages/Blog';
+import Projects from './components/pages/Projects';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import NotFound from './components/pages/NotFound';
@@ -34,11 +35,12 @@ class App extends Component {
           <Route path='/' component={Header} />
           <Route path='/' component={BgImage} />
 
-          <div className='content'>
+          <div className='content-router'>
             <Switch>
               <Route exact path='/' component={Homepage} />
               <Route exact path='/Skills' component={Skills} />
               <Route exact path='/Blog' component={Blog} />
+              <Route exact path='/Projects' component={Projects} />
               <Route exact path='/About' component={About} />
               <Route exact path='/Contact' component={Contact} />
               <Route path='/404' component={NotFound} />
