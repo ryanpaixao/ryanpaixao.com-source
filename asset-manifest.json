@@ -1,9 +1,12 @@
 {
-  "main.css": "static/css/main.8fda1839.css",
-  "main.css.map": "static/css/main.8fda1839.css.map",
-  "main.js": "static/js/main.aa798d55.js",
-  "main.js.map": "static/js/main.aa798d55.js.map",
+  "main.css": "static/css/main.30416e8a.css",
+  "main.css.map": "static/css/main.30416e8a.css.map",
+  "main.js": "static/js/main.2814fa52.js",
+  "main.js.map": "static/js/main.2814fa52.js.map",
+  "static/media/belugacdn_product.png": "static/media/belugacdn_product.1072e259.png",
   "static/media/fade_top_bottom.jpg": "static/media/fade_top_bottom.5e2e7515.jpg",
-  "static/media/ryanpaixao_logo.png": "static/media/ryanpaixao_logo.2e07e1a2.png",
+  "static/media/grafana_1.png": "static/media/grafana_1.1e0bebf8.png",
+  "static/media/iphoto-dirtree-to-flat-tree.png": "static/media/iphoto-dirtree-to-flat-tree.6e6d0c7a.png",
+  "static/media/ryanpaixao_logo.svg": "static/media/ryanpaixao_logo.710c7b39.svg",
   "static/media/skills_svg_sprite.svg": "static/media/skills_svg_sprite.65d3e65e.svg"
 }
