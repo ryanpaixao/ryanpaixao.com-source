@@ -28,12 +28,12 @@
   p.note {
     font-style: italic;
     font-size: 16px;
-    margin: 0 2%;
+    margin: 15px 2%;
     word-wrap: break-word;
 
     @media (min-width: 768px) {
       font-size: 18px;
-      margin: 0 15%;
+      margin: 15px 15%;
     }
   }
 

@@ -46,12 +46,18 @@ class Homepage extends Component {
       'A Frontend Web Developer who loves to travel.'
     ];
     const index = Math.floor((Math.random() * textArray.length) + 0);
-    const bodyText = <p>
-      I'm Ryan Paixao.<br/> {textArray[index]} <br/><br/> Find out more <Link to='/About'>about</Link> me.
-    </p>;
+    const bodyText = 
+      <p>
+        I'm Ryan Paixao. {textArray[index]} 
+      </p>;
+    const bodyText2 =  
+      <p> 
+        Find out more <Link to='/About'>about</Link> me.
+      </p>;
 
     return (
-      <div className='standard-content' style={{textAlign: 'center'}}>
+      <div className='standard-content' style={{textAlign: 'center', display: 'block'}}>
+
         <div className='header-title'>
           <TransitionBoiler 
             styleParameters={helloParams} 
@@ -67,6 +73,15 @@ class Homepage extends Component {
             sharedDefaults={{}} 
           />
         </div>
+
+        <div className=''>
+          <TransitionBoiler 
+            styleParameters={bodyTextParams} 
+            text={bodyText2} 
+            sharedDefaults={{}} 
+          />
+        </div>
+
       </div>
     );
   }

@@ -215,7 +215,7 @@ h1 {
   font-family: $headerFont;
   color: $h1Color;
   width: 100%;
-  margin: 25px auto;
+  margin: 0px auto 35px;
   text-align: center;
 }
 
@@ -235,6 +235,14 @@ a {
     color: $activeColor;
     @include transition(.4s ease-in-out);
   }
+}
+
+/*******************
+*******margins*******
+*******************/
+
+p {
+  margin-bottom: 24px;
 }
 
 /*******************

@@ -48,11 +48,19 @@
     font-size: 27px;
 
     li {
-      margin: 4% auto;
+      border: 1px black solid;
+      padding: 7px;
+
+      a {
+        padding: 2px 30%;
+      }
     }
 
     li:last-child {
       background: $attentionColor;
+      p {
+        margin-bottom: 0;
+      }
     }
   }
    
@@ -80,7 +88,7 @@
     align-items: center;
 
     ul {
-      margin-top: 5%;
+      margin-top: 28px;
       grid-column: -2 / -1;
       grid-row: 1;
 

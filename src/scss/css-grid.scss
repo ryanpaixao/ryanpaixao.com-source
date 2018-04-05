@@ -30,7 +30,7 @@ $headerHeight: 80px;
   grid-row: 1;
 
   margin-left: 20px;
-  margin-top: .9%;
+  margin-top: 3.5px;
   width: 70px;
 }
 .nav-menu {
@@ -69,16 +69,19 @@ $headerHeight: 80px;
   .header-title {
     text-align: center;
     font-family: $headerFont;
-    margin-bottom: 8%;
+    margin-bottom: 20px;
   }
 
   .text-body {
-    margin-top: 13%;
-    margin-bottom: 18%;
+    margin-top: 40px;
+    margin-bottom: 52px;
 
     grid-column: 2 / -3;
     display: grid;
     align-items: center;
+  }
+  .text-body:first-child {
+    margin-top: 80px;
   }
 }
 

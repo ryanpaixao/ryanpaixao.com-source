@@ -61,8 +61,8 @@ class IndividualSkill extends Component {
           <use xlinkHref={skillSprites + this.props.spriteName}></use>
         </svg>
         <h2>{this.props.skill}</h2>
-        <br />
-        <div  style={{textAlign: 'left'}}>
+        
+        <div>
           {this.displaySkills()}
         </div>
       </div>

@@ -23,15 +23,20 @@ const Projects = (props) => {
           I was responsible for adding new features to the site. 
           As well as troubleshooting any bugs, or errors that might arise. 
           All the while, making sure to keep the site responsive, and cross-browser accessible.
-          I worked on both the product site, and the client UI. 
-          <br /><br />
+          I worked on both the product site, and the client UI.
+        </p>
+        <p> 
           For the product site I created widgets/animations such as the typing text animation, 
           the with/without cdn toggled map, 
           the “Compare” price slider, 
-          and the “Plans & Pricing” modal popup. 
+          and the “Plans & Pricing” modal popup.
+        </p>
+        <p> 
           For the client UI I would connect existing backend API requests/rules, 
           and add them to the UI. 
           Giving users an intuitive, easy to use graphical interface.
+          I created a feature that shows takes the user's account metrics, 
+          and displays it via a heat map of the countries of the world.
           I also introduced automated testing to the UI's setting's code.
         </p>
       </div>
@@ -49,7 +54,8 @@ const Projects = (props) => {
           <a href='https://grafana.com/' target='_blank' rel='noopener noreferrer'>Grafana</a> is an open-source tool, 
           that helps users easily create, and edit dashboards. 
           Dashboards that display charts based on specific metrics. 
-          <br /><br />
+        </p>
+        <p>   
           I created a Grafana plugin for BelugaCDN clients to use. 
           The plugin allows the clients to use their own metrics data from their individual accounts, 
           and display it in a Grafana dashboard.
@@ -68,19 +74,22 @@ const Projects = (props) => {
         <p>
           I created a bash script to convert the directory tree structure, 
           and image files created by iphoto in to a single, flat directory structure. 
-          <br /> <br />
+        </p>
+        <p>    
           This is useful for people who no longer use iphoto, 
           and want to more easily view their old photos on a Linux computer. 
           It copies the old files in to a flattened version of the directory tree structure created by iphotos. 
           It gives each file a unique name based on it's location in the original directory structure.
         </p>
-        <br /><br />
-        <p style={{color: '#7AFFFD'}}>For example: <br /> <br /></p>
+        
+        <p style={{color: '#7AFFFD'}}>For example:  </p>
         <p className='note'>
           "/home/guest/Masters/2017/04/23/20170423-123456/photo_5.jpg" 
-          <br /><br />
+        </p>
+        <p className='note'>   
           Becomes -> 
-          <br /><br />
+        </p>
+        <p className='note'>   
           "/home/guest/Pictures/2017-04-23-20170423-123456-photo_5.jpg"
         </p>
       </div>
